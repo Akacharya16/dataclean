@@ -38,6 +38,7 @@ alldataSubjAct<- cbind(alldataSubject, alldataActivity)
 dataTable <- cbind(alldataSubjAct, dataTable)
 ################Q2 #############################
 # Reading "features.txt" and extracting only the mean and standard deviation
+###
 dataFeaturesMeanStd <- grep("mean\\(\\)|std\\(\\)",dataFeatures$featureName,value=TRUE) #var name
 
 # Taking only measurements for the mean and standard deviation and add "subject","activityNum"
